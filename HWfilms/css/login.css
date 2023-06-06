@@ -36,7 +36,7 @@ body::before {
     z-index: 90;
     position: relative;
     max-width: 450px;
-    height: 550px;
+    height: 500px;
     margin-left: 50%;
     background-color: rgb(0, 0, 0, 0.75);
     border-radius: 10px;
@@ -58,13 +58,12 @@ body::before {
     padding-left: 15px;
     box-sizing: border-box;
     outline: none;
+    margin-bottom: 10px;
 }
 .login_body input:hover {
     background-color: #444;
 }
-.input_box {
-    margin-bottom: 25px;
-}
+
 .login_body button {
     height: 50px;
     width: 100%;
@@ -105,4 +104,8 @@ body::before {
 }
 .help a:hover {
     text-decoration: underline;
+}
+
+p, span {
+    color: #fff;
 }
