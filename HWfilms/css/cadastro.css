@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     padding: 3rem;
 }
 .form-header {
@@ -75,17 +75,28 @@ body {
     
 }
 .input-box input {
+    /*
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
+    */
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #333;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 15px;
 }
 .input-box label,
 .gender-title h6 {
     font-size: 0.75rem;
     font-weight: 600;
-    color: #000000c0;
+    color: white;
 }
 .input-box input::placeholder {
     color: #000000be;
@@ -106,7 +117,7 @@ body {
 .gender-input label {
     font-size: 0.81rem;
     font-weight: 600;
-    color: #000000c0;
+    color: white;
 }
 .continue-button button {
     width: 100%;
@@ -125,5 +136,5 @@ body {
 }
 
 .title > h1 {
-    color: #000;
+    color: white;
 }
