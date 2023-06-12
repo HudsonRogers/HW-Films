@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/incio.css">
+  <title>FLYFILMS-INICIO</title>
+  <style>
+    @media (max-width: 700px) {
+      h2 {
+        color:blue;
+      }
+    }
+
+    .secaoFilmes {
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+      position: relative;
+      width: 90%;
+    }
+    .boxFilmes {
+      height: 150px;
+      width: 100%;
+      display: flex;
+      margin: auto;
+      overflow: hidden;
+    }
+      .filmes {
+        width: 92%;
+        display: inherit;
+        position: relative;
+      }
+        .subFilmes {
+          display: contents;
+        }
+        .filmeUnit {
+          width: 15%;
+          min-width: 115px;
+          height: 100%;
+          background-color: #ccc;
+          margin: 1px;
+          box-sizing: border-box;
+          border-radius: 5px;
+        }
+      
+      .secaoBotao {
+        width: 4%;
+        min-width: 25px;
+      }
+      .secaoBotao > button {
+        height: 100%;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        border: none;
+        position: relative;
+        width: 100%;
+      }
+      .secaoBotao > button:hover {
+        background-color: rgb(41, 41, 41);
+        transition: .3s;
+      }
+
+  </style>
+</head>
+
+<body>
+  <div class="nome text-center">
+    <h1>FLYFILMS</h1>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HWfilms/html/cadastro.html">cadastro</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" class="nav-link active" aria-current="page" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="true">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" class="nav-link active" aria-current="page" href="#drama">dramas</a></li>
+              <li><a class="dropdown-item" href="#terror">suspense</a></li>
+              <li><a class="dropdown-item" href="#ação"> ação</a></li>
+              <li><a class="dropdown-item" href="#animes">animes</a></li>
+              <li><a class="dropdown-item" href="#Comédia">Comédia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-item" class="nav-link active" aria-current="page" href="#" role="button"
+              aria-current="page" href="#">incio</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Degite aqui" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/John-Wick-4-.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/John-Wick-4-.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/John-Wick-4-.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--
+    =======
+    =======
+  -->
+
+
+  <div class="secaoFilmes">
+    <div class="titulos">
+      <h2>minha lista</h2>
+    </div>
+
+    <div class="boxFilmes">
+
+      <div class="secaoBotao">
+        <button><</button>
+      </div>
+
+      <div class="filmes">
+
+        <div class="subFilmes">
+          
+          <div class="filmeUnit">
+  
+          </div>
+  
+          <div class="filmeUnit">
+  
+          </div>
+  
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="secaoBotao">
+        <button>></button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="secaoFilmes">
+    <div class="titulos">
+      <h2>minha lista</h2>
+    </div>
+
+    <div class="boxFilmes">
+
+      <div class="secaoBotao">
+        <button><</button>
+      </div>
+
+      <div class="filmes">
+
+        <div class="subFilmes">
+          
+          <div class="filmeUnit">
+  
+          </div>
+  
+          <div class="filmeUnit">
+  
+          </div>
+  
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+          <div class="filmeUnit">
+  
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="secaoBotao">
+        <button>></button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container bg-transparent">
+
+    <h2>Lançamentos</h2>
+
+  </div>
+
+
+  <div class="container" id="img">
+    <div class="row">
+      <div class="col">
+        <img src="./img/John-Wick-4-.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2>Series</h2>
+  </div>
+  <div class="container" id="img">
+    <div class="row">
+      <div class="col">
+        <img src="./img/John-Wick-4-.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2> Filmes</h2>
+  </div>
+  <div class="container" id="img">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2> Animes</h2>
+  </div>
+  <div class="container" id="animes">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2> dramas</h2>
+  </div>
+  <div class="container" id="drama">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2> ação</h2>
+  </div>
+  <div class="container" id="ação">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2>Terror</h2>
+  </div>
+  <div class="container" id="terror">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2>Comédia</h2>
+  </div>
+  <div class="container" id="Comédia">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container bg-transparent">
+    <h2>Suspense</h2>
+  </div>
+
+  <div class="container" id="Comédia">
+    <div class="row">
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <img src="./img/moon lovers.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+
+  <BR></BR>
+
+
+  <div fo>
+
+  </div>
+
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Trivacisdade e Termos</a></p>
+    <p>&copy; 2023- company inc. &middot; <a href="#"></a></p>
+  </footer>
+
+  <script src="../script.js/incio.js"></script>
+</body>
+
+</html>
